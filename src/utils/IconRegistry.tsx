@@ -144,7 +144,7 @@ export const GamepadIcon = ({ color = 'black', height = 100, width = 100, ...pro
 
 
 export const SearchIcon = ({ color = 'black', height = 100, width = 100, ...props }: Icon) => (
-  <svg fill={color} height={height} viewBox="0 0 24 24" width={width} xmlns="http://www.w3.org/2000/svg" {...props}><path d="m19.25 19.25-3.75-3.75m-10.75-4.5c0-3.45178 2.79822-6.25 6.25-6.25 3.4518 0 6.25 2.79822 6.25 6.25 0 3.4518-2.7982 6.25-6.25 6.25-3.45178 0-6.25-2.7982-6.25-6.25z" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" /></svg>
+  <svg fill={color} height={height} viewBox="0 0 24 24" width={width} xmlns="http://www.w3.org/2000/svg" {...props}><path d="m19.25 19.25-3.75-3.75m-10.75-4.5c0-3.45178 2.79822-6.25 6.25-6.25 3.4518 0 6.25 2.79822 6.25 6.25 0 3.4518-2.7982 6.25-6.25 6.25-3.45178 0-6.25-2.7982-6.25-6.25z" stroke="#ffffff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" /></svg>
 )
 
 export const BurgerIcon = ({ color, width, height }: Icon) => (
