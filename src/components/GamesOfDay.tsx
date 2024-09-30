@@ -10,7 +10,7 @@ export default function GamesOfDay({ }) {
       <div className="h-[1pt] w-full bg-[#4c4c4c]"></div>
     </div>
 
-    <div className="flex flex-wrap gap-5 mt-8 justify-center">
+    <div className="flex flex-wrap gap-4 mt-8 justify-center">
       <GamesCard />
       <GamesCard />
       <GamesCard />
