@@ -147,6 +147,15 @@ export const SearchIcon = ({ color = 'black', height = 100, width = 100, ...prop
   <svg fill={color} height={height} viewBox="0 0 24 24" width={width} xmlns="http://www.w3.org/2000/svg" {...props}><path d="m19.25 19.25-3.75-3.75m-10.75-4.5c0-3.45178 2.79822-6.25 6.25-6.25 3.4518 0 6.25 2.79822 6.25 6.25 0 3.4518-2.7982 6.25-6.25 6.25-3.45178 0-6.25-2.7982-6.25-6.25z" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" /></svg>
 )
 
-export const BurgerIcon = ({ color = 'white', height = 100, width = 100, ...props }: Icon) => (
-  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 18L20 18" stroke="#ffffff" stroke-width="2" stroke-linecap="round"></path> <path d="M4 12L20 12" stroke="#ffffff" stroke-width="2" stroke-linecap="round"></path> <path d="M4 6L20 6" stroke="#ffffff" stroke-width="2" stroke-linecap="round"></path> </g></svg>
-)
+export const BurgerIcon = ({ color, width, height }: Icon) => (
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width={width} height={height}>
+    <g clipPath="url(#clip0_429_11066)">
+      <path d="M3 6.00092H21M3 12.0009H21M3 18.0009H21" stroke={color} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"></path>
+    </g>
+    <defs>
+      <clipPath id="clip0_429_11066">
+        <rect width="24" height="24" fill="white" transform="translate(0 0.000915527)"></rect>
+      </clipPath>
+    </defs>
+  </svg>
+);

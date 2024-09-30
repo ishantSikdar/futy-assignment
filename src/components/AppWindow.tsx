@@ -15,9 +15,9 @@ export default function AppWindow() {
       </div>
 
       <div className="">
-        <div className="flex z-50">
-          <SearchIcon height={80} width={80} />
-          <BurgerIcon color="white" height={50} width={5} />
+        <div className="flex z-50 items-center">
+          <SearchIcon height={40} width={40} />
+          <BurgerIcon color="white" height={40} width={40} />
         </div>
       </div>
     </div>
