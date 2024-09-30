@@ -1,7 +1,15 @@
-
+import AppWindow from "./components/AppWindow"
+import DesktopMenu from "./components/DesktopMenu"
 
 function App() {
-  return <div className="bg-black text-white">ohey</div>
+  return <div className="flex h-screen w-full font-poppins bg-black">
+    <div className="hidden md:block md:w-24">
+      <DesktopMenu />
+    </div>
+    <div className="w-full">
+      <AppWindow />
+    </div>
+  </div>
 }
 
 export default App

@@ -1,0 +1,40 @@
+import { ArrowIcon, CoinIcon } from "../utils/IconRegistry";
+
+export default function GamesCard() {
+  return <div className="text-sm relative w-[300px] h-[200px]">
+    <div className="bg-white w-max flex items-center rounded-full p-1 gap-1 absolute left-[38%] -top-2">
+      <CoinIcon color="black" height={20} width={20} />
+      <p className="">2100</p>
+      <ArrowIcon height={10} width={10} color="black" />
+    </div>
+
+    <div className="bg-lowWhite rounded-md w-full h-full overflow-hidden flex flex-col">
+      <div className="h-3 w-full bg-white"></div>
+
+      <div className="w-full h-full flex justify-between px-5">
+        <div className="flex flex-col gap-1 items-center justify-center">
+          <img src="/mcu.svg" alt="" className="w-16" />
+          <p className="text-white font-semibold text-lg">MUN</p>
+        </div>
+
+        <div className="text-white flex flex-col items-center justify-center">
+          <p className="text-sm text-white/50">SEP 14</p>
+          <p className="text-2xl">19:30</p>
+        </div>
+
+        <div className="flex flex-col gap-1 items-center justify-center">
+          <img src="/rmcf.svg" alt="" className="w-14" />
+          <p className="text-white font-semibold text-lg">MCF</p>
+        </div>
+      </div>
+
+      <div className="h-[1pt] w-full bg-white mt-2"></div>
+
+      <div className="p-2">
+        <button className="w-full uppercase bg-green-600 py-1 rounded-md text-white font-semibold">
+          Join Game
+        </button>
+      </div>
+    </div>
+  </div>
+}
