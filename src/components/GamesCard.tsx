@@ -18,7 +18,7 @@ export default function GamesCard() {
         </div>
 
         <div className="text-white flex flex-col items-center justify-center">
-          <p className="text-[4px] md:text-sm text-white/50">SEP 14</p>
+          <p className="text-[8px] md:text-sm text-white/50">SEP 14</p>
           <p className="text-xs md:text-2xl">19:30</p>
         </div>
 

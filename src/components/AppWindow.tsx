@@ -4,7 +4,7 @@ import MenuItem from "./MenuItem";
 import GameTabOptions from "./GameTabOptions";
 
 export default function AppWindow() {
-  return <div className="h-screen w-full ">
+  return <div className="h-[100dvh] w-full ">
     <div className="md:hidden h-[10%] w-full bg-black border-b flex justify-between items-center px-7">
       <div className="flex gap-4 items-center">
         <UserIcon color="white" height={40} width={40} />
