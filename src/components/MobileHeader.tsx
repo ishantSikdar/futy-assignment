@@ -1,10 +1,15 @@
 import { useEffect, useRef, useState } from "react";
-import { BurgerIcon, CoinIcon, SearchIcon, UserIcon } from "../utils/IconRegistry";
+import { CoinIcon, SearchIcon, UserIcon } from "../utils/IconRegistry";
 
 export default function MobileHeader({ isActive }: { isActive: boolean }) {
   const searchRef = useRef<HTMLInputElement>(null);
+  const [useOptions, setUseOptions] = useState<boolean>(false);
   const [useSearch, setUseSearch] = useState<boolean>(false);
   const [iconPosition, setIconPosition] = useState<string>('right-10');
+
+  const toggleHamburger = () => {
+    setUseOptions(prev => !prev);
+  }
 
   const toggleSearch = () => {
     setUseSearch((prev) => !prev);
@@ -30,7 +35,7 @@ export default function MobileHeader({ isActive }: { isActive: boolean }) {
   }, [useSearch]);
 
   return <>
-    <div className={`fixed z-50 -translate-x-10 top-5 ${!isActive && 'translate-x-5'} transition-transform duration-500 ease-in-out`}>
+    <div className={`md:hidden bg-black rounded-full overflow-hidden fixed z-50 -translate-x-10 top-5 ${!isActive && 'translate-x-5'} transition-transform duration-500 ease-in-out`}>
       <UserIcon color="white" height={40} width={40} />
     </div>
 
@@ -53,11 +58,25 @@ export default function MobileHeader({ isActive }: { isActive: boolean }) {
 
 
       {!useSearch && <div className="">
-        <div className="flex z-50 items-center">
+        <div className="flex gap-2 z-50 items-center">
           <button onClick={toggleSearch}>
             <SearchIcon height={40} width={40} />
           </button>
-          <BurgerIcon color="white" height={40} width={40} />
+          <button onClick={toggleHamburger} className="flex flex-col gap-1 w-6">
+            <div
+              className={`${useOptions ? 'rotate-45 translate-y-2' : ''
+                } h-1 w-full bg-white transition-transform duration-300 ease-in-out origin-center`}
+            ></div>
+            <div
+              className={`${useOptions ? 'opacity-0' : ''
+                } h-1 w-full bg-white transition-opacity duration-300 ease-in-out`}
+            ></div>
+            <div
+              className={`${useOptions ? '-rotate-45 -translate-y-2' : ''
+                } h-1 w-full bg-white transition-transform duration-300 ease-in-out origin-center`}
+            ></div>
+          </button>
+
         </div>
       </div>}
     </header>

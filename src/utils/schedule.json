@@ -156,5 +156,229 @@
                 "time": "23:00"
             }
         ]
+    },
+    {
+        "date": "2024-10-19T00:00:00.000Z",
+        "games": [
+            {
+                "id": 21,
+                "teamCodeA": "ARS",
+                "teamCodeB": "INT",
+                "fee": 2500,
+                "time": "13:00"
+            },
+            {
+                "id": 22,
+                "teamCodeA": "LIV",
+                "teamCodeB": "JUV",
+                "fee": 2200,
+                "time": "15:30"
+            },
+            {
+                "id": 23,
+                "teamCodeA": "BAR",
+                "teamCodeB": "DOR",
+                "fee": 2700,
+                "time": "18:00"
+            },
+            {
+                "id": 24,
+                "teamCodeA": "CHE",
+                "teamCodeB": "PSG",
+                "fee": 2300,
+                "time": "20:45"
+            }
+        ]
+    },
+    {
+        "date": "2024-10-20T00:00:00.000Z",
+        "games": [
+            {
+                "id": 25,
+                "teamCodeA": "ATM",
+                "teamCodeB": "RMD",
+                "fee": 2400,
+                "time": "12:30"
+            },
+            {
+                "id": 26,
+                "teamCodeA": "BAY",
+                "teamCodeB": "ARS",
+                "fee": 2600,
+                "time": "15:00"
+            },
+            {
+                "id": 27,
+                "teamCodeA": "MUN",
+                "teamCodeB": "JUV",
+                "fee": 2500,
+                "time": "17:30"
+            },
+            {
+                "id": 28,
+                "teamCodeA": "INT",
+                "teamCodeB": "DOR",
+                "fee": 2200,
+                "time": "20:00"
+            }
+        ]
+    },
+    {
+        "date": "2024-10-21T00:00:00.000Z",
+        "games": [
+            {
+                "id": 29,
+                "teamCodeA": "LIV",
+                "teamCodeB": "PSG",
+                "fee": 2700,
+                "time": "14:00"
+            },
+            {
+                "id": 30,
+                "teamCodeA": "BAR",
+                "teamCodeB": "MUN",
+                "fee": 2600,
+                "time": "16:30"
+            },
+            {
+                "id": 31,
+                "teamCodeA": "RMD",
+                "teamCodeB": "BAY",
+                "fee": 2500,
+                "time": "19:00"
+            }
+        ]
+    },
+    {
+        "date": "2024-10-22T00:00:00.000Z",
+        "games": [
+            {
+                "id": 32,
+                "teamCodeA": "CHE",
+                "teamCodeB": "INT",
+                "fee": 2300,
+                "time": "13:00"
+            },
+            {
+                "id": 33,
+                "teamCodeA": "DOR",
+                "teamCodeB": "JUV",
+                "fee": 2400,
+                "time": "15:30"
+            },
+            {
+                "id": 34,
+                "teamCodeA": "LIV",
+                "teamCodeB": "ATM",
+                "fee": 2200,
+                "time": "18:00"
+            },
+            {
+                "id": 35,
+                "teamCodeA": "ARS",
+                "teamCodeB": "PSG",
+                "fee": 2700,
+                "time": "20:45"
+            }
+        ]
+    },
+    {
+        "date": "2024-10-23T00:00:00.000Z",
+        "games": [
+            {
+                "id": 36,
+                "teamCodeA": "BAY",
+                "teamCodeB": "MUN",
+                "fee": 2400,
+                "time": "12:00"
+            },
+            {
+                "id": 37,
+                "teamCodeA": "RMD",
+                "teamCodeB": "CHE",
+                "fee": 2600,
+                "time": "15:30"
+            },
+            {
+                "id": 38,
+                "teamCodeA": "BAR",
+                "teamCodeB": "DOR",
+                "fee": 2500,
+                "time": "18:00"
+            },
+            {
+                "id": 39,
+                "teamCodeA": "PSG",
+                "teamCodeB": "INT",
+                "fee": 2300,
+                "time": "20:45"
+            }
+        ]
+    },
+    {
+        "date": "2024-10-24T00:00:00.000Z",
+        "games": [
+            {
+                "id": 40,
+                "teamCodeA": "JUV",
+                "teamCodeB": "ARS",
+                "fee": 2500,
+                "time": "13:30"
+            },
+            {
+                "id": 41,
+                "teamCodeA": "ATM",
+                "teamCodeB": "LIV",
+                "fee": 2200,
+                "time": "16:00"
+            },
+            {
+                "id": 42,
+                "teamCodeA": "MUN",
+                "teamCodeB": "RMD",
+                "fee": 2700,
+                "time": "18:30"
+            },
+            {
+                "id": 43,
+                "teamCodeA": "BAY",
+                "teamCodeB": "PSG",
+                "fee": 2300,
+                "time": "21:00"
+            }
+        ]
+    },
+    {
+        "date": "2024-10-25T00:00:00.000Z",
+        "games": [
+            {
+                "id": 44,
+                "teamCodeA": "CHE",
+                "teamCodeB": "DOR",
+                "fee": 2400,
+                "time": "14:00"
+            },
+            {
+                "id": 45,
+                "teamCodeA": "INT",
+                "teamCodeB": "BAR",
+                "fee": 2600,
+                "time": "16:30"
+            },
+            {
+                "id": 46,
+                "teamCodeA": "JUV",
+                "teamCodeB": "BAY",
+                "fee": 2500,
+                "time": "19:00"
+            },
+            {
+                "id": 47,
+                "teamCodeA": "LIV",
+                "teamCodeB": "RMD",
+                "fee": 2700,
+                "time": "21:30"
+            }
+        ]
     }
 ]

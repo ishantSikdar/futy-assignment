@@ -12,7 +12,10 @@ export default function GameTabOptions({ isFocused }: { isFocused: boolean }) {
       </TabButton>
 
       <TabButton isActive={false}>
-        Live
+        <div className="flex items-center gap-2">
+          <div className="w-2 h-2 rounded-full bg-[#B3F002]"></div>
+          <p>Live</p>
+        </div>
       </TabButton>
 
       <TabButton isActive={false}>

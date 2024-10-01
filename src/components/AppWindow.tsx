@@ -4,15 +4,15 @@ import MenuItem from "./MenuItem";
 import GameTabOptions from "./GameTabOptions";
 import MobileHeader from "./MobileHeader";
 import { useEffect, useRef, useState } from "react";
-import GamesSchedule from "../utils/schedule.json";
+import gamesSchedule from "../utils/schedule.json";
 
 export default function AppWindow() {
   const gamesWindow = useRef<HTMLDivElement>(null);
-  const lastScrollRef = useRef<number>(0); // Use a ref to store last scroll position
+  const lastScrollRef = useRef<number>(0); 
   const [isFocused, setIsFocused] = useState<boolean>(true);
 
   const handleScroll = () => {
-    const currentScrollY = gamesWindow.current?.scrollTop || 0; // Get the current scroll position
+    const currentScrollY = gamesWindow.current?.scrollTop || 0; 
 
     // Determine scroll direction
     if (currentScrollY > lastScrollRef.current) {
@@ -22,7 +22,7 @@ export default function AppWindow() {
       setIsFocused(true); // Show the opaque div
     }
 
-    lastScrollRef.current = currentScrollY; 
+    lastScrollRef.current = currentScrollY;
   };
 
 
@@ -44,12 +44,12 @@ export default function AppWindow() {
       <MobileHeader isActive={isFocused} />
 
       {/* main */}
-      <div className={`${isFocused ? 'h-[92%]' : 'h-[100%]' } md:h-full flex flex-col`}>
+      <div className={`${isFocused ? 'h-[92%]' : 'h-[100%]'} md:h-full flex flex-col`}>
         <GameTabOptions isFocused={isFocused} />
 
         {/* games  */}
         <div ref={gamesWindow} className="flex-grow overflow-y-scroll pb-20 flex flex-col gap-4">
-          {GamesSchedule.map(({date, games}) => <GamesOfDay key={date} games={games} date={new Date(date)}  />)}
+          {gamesSchedule.map(({ date, games }) => <GamesOfDay key={date} games={games} date={new Date(date)} />)}
         </div>
       </div>
 
