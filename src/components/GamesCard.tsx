@@ -1,10 +1,17 @@
 import { ArrowIcon, CoinIcon } from "../utils/IconRegistry";
+import { Game } from "../utils/interface";
 
-export default function GamesCard() {
+export default function GamesCard({ gameDetails, date }: { gameDetails: Game, date: Date }) {
+
+  const day = date.getDate().toString().padStart(2, '0'); 
+  const month = date.toLocaleString('default', { month: 'short' }); 
+  
+  const formattedDate = `${day} ${month}`;
+
   return <div className="text-xs relative w-[170px] h-[120px] md:w-[300px] md:h-[200px]">
     <div className="bg-white w-max flex items-center rounded-full p-1 gap-1 absolute left-[30%] md:left-[38%] -top-2">
       <CoinIcon color="black" height={15} width={15} />
-      <p className="">2100</p>
+      <p className="">{gameDetails.fee}</p>
       <ArrowIcon height={8} width={8} color="black" />
     </div>
 
@@ -14,17 +21,17 @@ export default function GamesCard() {
       <div className="w-full h-full flex justify-between px-5">
         <div className="flex flex-col gap-1 items-center justify-center">
           <img src="/mcu.svg" alt="" className="w-6 md:w-16" />
-          <p className="text-white font-semibold text-xs md:text-lg">MUN</p>
+          <p className="text-white font-semibold text-xs md:text-lg">{gameDetails.teamCodeA}</p>
         </div>
 
         <div className="text-white flex flex-col items-center justify-center">
-          <p className="text-[8px] md:text-sm text-white/50">SEP 14</p>
-          <p className="text-xs md:text-2xl">19:30</p>
+          <p className="text-[8px] md:text-sm text-white/50">{formattedDate}</p>
+          <p className="text-xs md:text-2xl">{gameDetails.time}</p>
         </div>
 
         <div className="flex flex-col gap-1 items-center justify-center">
           <img src="/rmcf.svg" alt="" className="w-6 md:w-14" />
-          <p className="text-white font-semibold text-xs md:text-lg">MCF</p>
+          <p className="text-white font-semibold text-xs md:text-lg">{gameDetails.teamCodeB}</p>
         </div>
       </div>
 

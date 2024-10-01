@@ -4,6 +4,7 @@ import MenuItem from "./MenuItem";
 import GameTabOptions from "./GameTabOptions";
 import MobileHeader from "./MobileHeader";
 import { useEffect, useRef, useState } from "react";
+import GamesSchedule from "../utils/schedule.json";
 
 export default function AppWindow() {
   const gamesWindow = useRef<HTMLDivElement>(null);
@@ -47,10 +48,8 @@ export default function AppWindow() {
         <GameTabOptions isFocused={isFocused} />
 
         {/* games  */}
-        <div ref={gamesWindow} className="flex-grow overflow-y-scroll flex flex-col gap-4">
-          <GamesOfDay />
-          <GamesOfDay />
-          <GamesOfDay />
+        <div ref={gamesWindow} className="flex-grow overflow-y-scroll pb-20 flex flex-col gap-4">
+          {GamesSchedule.map(({date, games}) => <GamesOfDay key={date} games={games} date={new Date(date)}  />)}
         </div>
       </div>
 

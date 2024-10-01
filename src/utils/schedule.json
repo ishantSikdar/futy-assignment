@@ -1,0 +1,160 @@
+[
+    {
+        "date": "2024-10-14T00:00:00.000Z",
+        "games": [
+            {
+                "id": 1,
+                "teamCodeA": "LIV",
+                "teamCodeB": "ATM",
+                "fee": 2300,
+                "time": "17:00"
+            },
+            {
+                "id": 2,
+                "teamCodeA": "JUV",
+                "teamCodeB": "BAR",
+                "fee": 2500,
+                "time": "19:45"
+            },
+            {
+                "id": 3,
+                "teamCodeA": "RMD",
+                "teamCodeB": "PSG",
+                "fee": 2200,
+                "time": "21:30"
+            }
+        ]
+    },
+    {
+        "date": "2024-10-15T00:00:00.000Z",
+        "games": [
+            {
+                "id": 4,
+                "teamCodeA": "BAY",
+                "teamCodeB": "CHE",
+                "fee": 2400,
+                "time": "14:00"
+            },
+            {
+                "id": 5,
+                "teamCodeA": "INT",
+                "teamCodeB": "MUN",
+                "fee": 2600,
+                "time": "16:15"
+            }
+        ]
+    },
+    {
+        "date": "2024-10-16T00:00:00.000Z",
+        "games": [
+            {
+                "id": 7,
+                "teamCodeA": "PSG",
+                "teamCodeB": "LIV",
+                "fee": 2700,
+                "time": "12:45"
+            },
+            {
+                "id": 8,
+                "teamCodeA": "ATM",
+                "teamCodeB": "JUV",
+                "fee": 2100,
+                "time": "15:00"
+            },
+            {
+                "id": 9,
+                "teamCodeA": "BAR",
+                "teamCodeB": "BAY",
+                "fee": 2800,
+                "time": "18:00"
+            },
+            {
+                "id": 10,
+                "teamCodeA": "RMD",
+                "teamCodeB": "ARS",
+                "fee": 2300,
+                "time": "20:30"
+            },
+            {
+                "id": 20,
+                "teamCodeA": "LSG",
+                "teamCodeB": "PSG",
+                "fee": 2100,
+                "time": "23:30"
+            }
+        ]
+    },
+    {
+        "date": "2024-10-17T00:00:00.000Z",
+        "games": [
+            {
+                "id": 11,
+                "teamCodeA": "CHE",
+                "teamCodeB": "INT",
+                "fee": 2500,
+                "time": "13:00"
+            },
+            {
+                "id": 12,
+                "teamCodeA": "DOR",
+                "teamCodeB": "MUN",
+                "fee": 2200,
+                "time": "15:30"
+            },
+            {
+                "id": 13,
+                "teamCodeA": "BAY",
+                "teamCodeB": "PSG",
+                "fee": 2700,
+                "time": "18:45"
+            },
+            {
+                "id": 14,
+                "teamCodeA": "LIV",
+                "teamCodeB": "ARS",
+                "fee": 2500,
+                "time": "21:00"
+            }
+        ]
+    },
+    {
+        "date": "2024-10-18T00:00:00.000Z",
+        "games": [
+            {
+                "id": 15,
+                "teamCodeA": "JUV",
+                "teamCodeB": "RMD",
+                "fee": 2600,
+                "time": "14:15"
+            },
+            {
+                "id": 16,
+                "teamCodeA": "ATM",
+                "teamCodeB": "BAR",
+                "fee": 2400,
+                "time": "16:30"
+            },
+            {
+                "id": 17,
+                "teamCodeA": "MUN",
+                "teamCodeB": "CHE",
+                "fee": 2300,
+                "time": "19:00"
+            },
+            {
+                "id": 18,
+                "teamCodeA": "PSG",
+                "teamCodeB": "DOR",
+                "fee": 2500,
+                "time": "21:30"
+            },
+            {
+                "id": 19,
+                "teamCodeA": "INT",
+                "teamCodeB": "BAY",
+                "fee": 2700,
+                "time": "23:00"
+            }
+        ]
+    }
+]
